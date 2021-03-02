@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Heart Disease prediction</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.png') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Website Title -->
+    	<div class="container">
+            <h2 class='container-heading'><span class="heading_font">Heart Disease predictor</span></h2>
+            <div class='description'>
+    			<p>A Machine Learning Web App, Built with Flask, Deployed using Heroku.</p>
+    		</div>
+    	</div>
+
+        <!-- Text Area -->
+    	<div class="ml-container">
+    		<form action="{{ url_for('predict') }}" method="POST">
+                <input class="form-input" type="text" name="age" placeholder="Age in years"><br>
+                <input class="form-input" type="text" name="sex" placeholder="Sex (1 = male; 0 = female)"><br>
+                <input class="form-input" type="text" name="cp" placeholder="Chest pain 1-ta,2-aa,3-nap,4-a"><br>
+                <input class="form-input" type="text" name="trestbps" placeholder="Resting blood pressure in mm"><br>
+                <input class="form-input" type="text" name="chol" placeholder="Serum cholestoral in mg/dl."><br>
+                <input class="form-input" type="text" name="fbs" placeholder="(Fasting blood sugar > 120 mg/dl) (1 = true; 0 = false)"><br>
+                <input class="form-input" type="text" name="restecg" placeholder="Resting electrocardiographic results 0-n,1-STT,2-p or d"><br>
+                <input class="form-input" type="text" name="thalach" placeholder="Maximum heart rate achieved"><br>
+                <input class="form-input" type="text" name="exang" placeholder="Exercise induced angina (1 = yes; 0 = no)"><br>
+                <input class="form-input" type="text" name="oldpeak" placeholder="ST depression induced by exercise relative to rest."><br>
+                <input class="form-input" type="text" name="slope" placeholder="The slope of the peak exercise ST segment 1-up,2-flat,3-down"><br>
+                <input class="form-input" type="text" name="ca" placeholder="Number of major vessels (0-3) colored by flourosopy."><br>
+                <input class="form-input" type="text" name="thal" placeholder="Thalassemia defects 3 = normal ; 6 = fixed defect ; 7 = reversable defect."><br>
+
+                
+
+        		<input type="submit" class="my-cta-button" value="Predict">
+        	</form>
+            
+    	</div>
+
+        <!-- Footer -->
+       <div class='footer'>
+           <br>
+           <br>
+           <div class="contact">
+               <a target="_blank" href="https://github.com/khurram-DS/Doctor_consultation_Fees_Deployment"><i class="fab fa-github fa-lg contact-icon"></i></a>
+               <a target="_blank" href="https://www.linkedin.com/in/khurram-shakoor-b49a2314a/"><i class="fab fa-linkedin fa-lg contact-icon"></i></a>
+           </div>
+           <p class='footer-description'>Created by Khurram shakoor.</p>
+       </div>
+
+    </body>
+</html>
+
