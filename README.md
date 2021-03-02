@@ -5,4 +5,4 @@
 
 • This model will let you know the facts that you are really diagnosed or you have to take care of you heart.
 ## If you want to view the deployed model, click on the following link:<br />
-Deployed at: _https://angiographic-heart-disease.herokuapp.com/predict_
+Deployed at: https://angiographic-heart-disease.herokuapp.com/predict
